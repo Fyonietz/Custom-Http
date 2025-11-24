@@ -1,6 +1,7 @@
 const std = @import("std");
 const flare_error = @import("error.zig");
 const linux = std.os.linux;
+const io_uring = linux.IoUring;
 
 fn setup_socket(server_fd: usize) flare_error.tcp!usize {
     const options: i32 = 1;
