@@ -1,5 +1,7 @@
 pub const tcp = error{
     FailedCreatingSocket,
     FailedSocketOption,
-    FailedToBindSocket
+    FailedToBindSocket,
+    FailedToAcceptSocket,
+    FailedToListenSocket
 };
